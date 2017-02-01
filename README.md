@@ -1,6 +1,5 @@
 # Mini-Project Discrete mathematics
-# Digit Recognition
-# Digit Recognition
+Handwritten Digit Recognition using OpenCV, sklearn and Python
 # Credits
 Thank you, `bikz05`
 
