@@ -2,5 +2,5 @@
 # Digit Recognition
 # Digit Recognition
 # Credits
-Thank you, bikz05
+Thank you, `bikz05`
 
