@@ -1,1 +1,1 @@
-# therdpong-digit-recognition
+# Mini-Project Digit Recognition
