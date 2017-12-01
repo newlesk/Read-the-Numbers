@@ -12,7 +12,7 @@ parser = ap.ArgumentParser()
 parser.add_argument("-i", "--inputimage", help="Path to Image", required="True")
 
 # If your cloud is not support GUI
-# parser.add_argument("-i", "--outputimage", help="Path to Image Output", required="True")
+parser.add_argument("-o", "--outputimage", help="Path to Image Output", required="True")
 
 args = vars(parser.parse_args())
 
@@ -53,10 +53,10 @@ for rect in rects:
     nbr = clf.predict(pp.transform(np.array([roi_hog_fd], 'float64')))
     cv2.putText(im, str(int(nbr[0])), (rect[0], rect[1]),cv2.FONT_HERSHEY_DUPLEX, 2, (0, 255, 255), 3)
 
-cv2.namedWindow("Resulting Image with Rectangular ROIs", cv2.WINDOW_NORMAL)
-cv2.imshow("Resulting Image with Rectangular ROIs", im)
+#cv2.namedWindow("Resulting Image with Rectangular ROIs", cv2.WINDOW_NORMAL)
+#cv2.imshow("Resulting Image with Rectangular ROIs", im)
 
 # If your cloud is not support GUI
-# cv2.imwrite(args["outputimage"], im)
+cv2.imwrite(args["outputimage"], im)
 
 cv2.waitKey()
